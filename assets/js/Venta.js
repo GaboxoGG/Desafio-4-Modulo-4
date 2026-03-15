@@ -66,7 +66,7 @@ const divVent = document.getElementById("cartav")
 
 const renderVent = ()=> {
     let template = ""
-    for (v of propiedadesVentas){
+    for (let v of propiedadesVentas){
         template += `
             <div class="col-md-4 mb-4">
                 <div class="card">
@@ -79,7 +79,7 @@ const renderVent = ()=> {
                             <i class="fas fa-bed"></i>  ${v.habitaciones} |
                             <i class="fas fa-bath"></i> ${v.baños}
                         </p>
-                        <p><i class="fas fa-dollar-sign"></i>${v.costo}</p>
+                        <p><i class="fas fa-dollar-sign"></i> ${v.costo}</p>
                         <p>${v.smoke == true ? "<span class='text-success'><i class='fas fa-smoking'></i> Permitido fumar</span>" 
                         : "<span class='text-danger'><i class='fas fa-smoking-ban'></i> No se permite fumar</span>"}</p>
 
